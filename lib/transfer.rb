@@ -19,8 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-    sender.balance -= amount
-    receiver.balance += amount
+    
     @status = "complete"
 
     if @sender.balance < amount
@@ -28,6 +27,10 @@ class Transfer
 
     elsif @status == "complete"
       puts "Transaction executed"
+
+    else
+      @sender.balance -= amount
+      @receiver.balance += amount
 
   end
 
