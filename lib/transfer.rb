@@ -27,6 +27,7 @@ class Transfer
       @status = "rejected"
 
     elsif @status == "complete"
+      puts "Transaction executed"
 
   end
 
