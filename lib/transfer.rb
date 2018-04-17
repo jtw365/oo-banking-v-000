@@ -26,6 +26,8 @@ class Transfer
     if @sender.balance < amount
       @status = "rejected"
 
+    elsif @status == "complete"
+
   end
 
 
