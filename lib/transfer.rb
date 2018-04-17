@@ -24,7 +24,8 @@ class Transfer
     @status = "complete"
 
     if @sender.balance < amount
-      @pending = "rejected"
+      @status = "rejected"
+
   end
 
 
